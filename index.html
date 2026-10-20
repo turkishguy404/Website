@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charmora | El Yapımı Charm Takılar</title>
+  <meta name="description" content="Charmora: Hikâyeni anlatan el yapımı charm, bileklik ve kolye koleksiyonları.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Altın gradyanı (charm ikonları tarafından kullanılır) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#f6e3a1"/>
+        <stop offset="50%" stop-color="#d4a94f"/>
+        <stop offset="100%" stop-color="#a87a2a"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">Charm<span>ora</span></a>
+
+      <nav class="nav" id="nav" aria-label="Ana menü">
+        <a href="#collections">Koleksiyonlar</a>
+        <a href="#products">Ürünler</a>
+        <a href="#story">Hikâyemiz</a>
+        <a href="#reviews">Yorumlar</a>
+        <a href="#contact">İletişim</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="cart-btn" id="cartOpen" aria-label="Sepeti aç">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Menüyü aç" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="eyebrow">Yeni Sezon Koleksiyonu</p>
+          <h1>Her charm,<br>bir <em>hikâye</em> anlatır.</h1>
+          <p class="hero__lead">El işçiliğiyle üretilen, 925 ayar gümüş ve altın kaplama charm takılarla kendi hikâyeni tasarla.</p>
+          <div class="hero__cta">
+            <a href="#products" class="btn btn--primary">Alışverişe Başla</a>
+            <a href="#story" class="btn btn--ghost">Hikâyemiz</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>12.000+</strong><span>Mutlu müşteri</span></li>
+            <li><strong>250+</strong><span>Özgün tasarım</span></li>
+            <li><strong>4.9/5</strong><span>Ortalama puan</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="orb"></div>
+          <div class="floating floating--1" data-charm="heart"></div>
+          <div class="floating floating--2" data-charm="star"></div>
+          <div class="floating floating--3" data-charm="moon"></div>
+          <div class="floating floating--4" data-charm="clover"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVANTAJLAR -->
+    <section class="perks">
+      <div class="container perks__grid">
+        <div class="perk reveal"><strong>Ücretsiz Kargo</strong><span>750 ₺ üzeri siparişlerde</span></div>
+        <div class="perk reveal"><strong>925 Ayar Gümüş</strong><span>Sertifikalı malzeme</span></div>
+        <div class="perk reveal"><strong>Hediye Paketi</strong><span>Her siparişte ücretsiz</span></div>
+        <div class="perk reveal"><strong>30 Gün İade</strong><span>Soru sormadan değişim</span></div>
+      </div>
+    </section>
+
+    <!-- KOLEKSİYONLAR -->
+    <section class="section" id="collections">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Keşfet</p>
+          <h2>Koleksiyonlarımız</h2>
+        </div>
+        <div class="collections">
+          <a href="#products" class="collection reveal" data-filter-link="Aşk">
+            <div class="collection__art" data-charm="heart"></div>
+            <h3>Aşk &amp; Sevgi</h3>
+            <p>Sevdiklerine özel anlamlar taşıyan tasarımlar.</p>
+          </a>
+          <a href="#products" class="collection reveal" data-filter-link="Gökyüzü">
+            <div class="collection__art" data-charm="moon"></div>
+            <h3>Gökyüzü</h3>
+            <p>Ay, yıldız ve burç temalı büyülü charmlar.</p>
+          </a>
+          <a href="#products" class="collection reveal" data-filter-link="Doğa">
+            <div class="collection__art" data-charm="clover"></div>
+            <h3>Doğa &amp; Şans</h3>
+            <p>Yonca, damla ve çiçek motifleriyle şans getir.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÜRÜNLER -->
+    <section class="section section--tint" id="products">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Çok Satanlar</p>
+          <h2>Öne Çıkan Charmlar</h2>
+        </div>
+        <div class="filters reveal" id="filters" role="tablist" aria-label="Ürün kategorileri"></div>
+        <div class="products" id="productGrid"></div>
+      </div>
+    </section>
+
+    <!-- HİKÂYE -->
+    <section class="section" id="story">
+      <div class="container story">
+        <div class="story__visual reveal" aria-hidden="true">
+          <div class="story__card" data-charm="key"></div>
+        </div>
+        <div class="story__text reveal">
+          <p class="eyebrow">Hikâyemiz</p>
+          <h2>Küçük detaylar, büyük anlamlar.</h2>
+          <p>Charmora, 2016'da İstanbul'da küçük bir atölyede, her takının bir anıyı sakladığı fikriyle kuruldu. Bugün ekibimiz her parçayı tek tek tasarlıyor, işliyor ve elle cilalıyor.</p>
+          <p>Sürdürülebilirliğe önem veriyoruz: geri dönüştürülmüş gümüş kullanıyor, ambalajlarımızı tamamen geri dönüştürülebilir malzemelerden üretiyoruz.</p>
+          <ul class="checklist">
+            <li>El yapımı ve sınırlı üretim</li>
+            <li>Nikel içermez, hassas ciltlere uygun</li>
+            <li>Kişiye özel gravür seçeneği</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- YORUMLAR -->
+    <section class="section section--dark" id="reviews">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Müşteri Yorumları</p>
+          <h2>Bizi Onlardan Dinleyin</h2>
+        </div>
+        <div class="reviews">
+          <blockquote class="review reveal">
+            <div class="stars" aria-label="5 yıldız">★★★★★</div>
+            <p>Kızıma doğum günü hediyesi aldım, paketleme ve işçilik muhteşemdi. Çok beğendi!</p>
+            <footer>Elif K. · İstanbul</footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <div class="stars" aria-label="5 yıldız">★★★★★</div>
+            <p>Bileklik tam beklediğim gibi geldi. Charmlar hem sağlam hem çok şık duruyor.</p>
+            <footer>Zeynep A. · Ankara</footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <div class="stars" aria-label="5 yıldız">★★★★★</div>
+            <p>Gravür hizmeti harika. Kargo hızlıydı, müşteri hizmetleri çok ilgiliydi.</p>
+            <footer>Merve T. · İzmir</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- BÜLTEN -->
+    <section class="section newsletter" id="contact">
+      <div class="container newsletter__box reveal">
+        <h2>İlk siparişinde %10 indirim</h2>
+        <p>Bültenimize katıl, yeni koleksiyonlardan ve kampanyalardan ilk sen haberdar ol.</p>
+        <form class="newsletter__form" id="newsletterForm" novalidate>
+          <input type="email" id="email" placeholder="E-posta adresin" aria-label="E-posta adresi" required>
+          <button type="submit" class="btn btn--primary">Abone Ol</button>
+        </form>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="logo logo--light">Charm<span>ora</span></a>
+        <p class="footer__about">Hikâyeni anlatan el yapımı charm takılar.</p>
+      </div>
+      <div>
+        <h4>Keşfet</h4>
+        <a href="#collections">Koleksiyonlar</a>
+        <a href="#products">Ürünler</a>
+        <a href="#story">Hikâyemiz</a>
+      </div>
+      <div>
+        <h4>Yardım</h4>
+        <a href="#contact">Kargo &amp; Teslimat</a>
+        <a href="#contact">İade &amp; Değişim</a>
+        <a href="#contact">Sık Sorulan Sorular</a>
+      </div>
+      <div>
+        <h4>İletişim</h4>
+        <p>info@charmora.com</p>
+        <p>+90 (212) 000 00 00</p>
+        <p>İstanbul, Türkiye</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">© <span id="year"></span> Charmora. Tüm hakları saklıdır.</div>
+    </div>
+  </footer>
+
+  <!-- SEPET ÇEKMECESİ -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Sepet" aria-hidden="true">
+    <div class="drawer__head">
+      <h3>Sepetim</h3>
+      <button class="drawer__close" id="cartClose" aria-label="Sepeti kapat">×</button>
+    </div>
+    <div class="drawer__body" id="cartItems"></div>
+    <div class="drawer__foot">
+      <div class="drawer__total"><span>Toplam</span><strong id="cartTotal">0 ₺</strong></div>
+      <button class="btn btn--primary btn--block" id="checkout">Ödemeye Geç</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
